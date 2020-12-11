@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "d187852e-f3c7-47f1-9aa7-4d6556795ffd",
+		"name": "ProofreadingAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Mt.alshahat@gmail.com\",\r\n    \"name\" :\"Mahmoud Tarik\",\r\n    \"password\": \"Maho19421989\",\r\n    \"c_password\":\"Maho19421989\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://proofreading-app.herokuapp.com/api/register",
+					"protocol": "https",
+					"host": [
+						"proofreading-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Mt.alshahat@gmail.com\",\r\n    \"password\":\"Maho19421989\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://proofreading-app.herokuapp.com/api/login",
+					"protocol": "https",
+					"host": [
+						"proofreading-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllCaptionTracks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDliZDE0M2VlNDAzNDYwZWEzNTgxYzNiZDI1YzZlNWU1NTIzZWU0NjJjMDg1NjViNTE4NTJhMGQ1MGE4OWMwNDliOWQxZTM4N2E0Njg4ZWIiLCJpYXQiOiIxNjA3NDgyMTEzLjcwOTk2MCIsIm5iZiI6IjE2MDc0ODIxMTMuNzA5OTY0IiwiZXhwIjoiMTYzOTAxODExMy42ODc5NjUiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.3O_kYqQp8AqLfTLSbPKhieINignfZwKciVa941X5JAMq2Nqdqhswq7pD7eBwchFq2VYy5De1TtKvVr2eVEqGaIoW9jxcgKyWKn6-X8ck1cr2Tu8gZt7ek8GtGPtEoybLIxjPZTUIipI1nCfRVVUlQX8Rm2JL7m25c9NW1rODgJU0gyNRkgzMdAdkiS1z-ox2LpIM87rwE2zZmc_EcnkfUIFLmzCPte2l5Q9PjG-u60fUkYfS6r6s2127RJJxRBS07_NbXU6oN6vTvP0Kdl-cfIDi5hQBFy16KYx2afh02YVCIULzQRHdsrjWuYyK5CQatzX_XgConQCP0SC43B8LYUfSAXU2iDJWsf0Hye0Y-8elNladfGQZ-15mAizrp6-JOi7t3aP7Oinlgx5akmKWOi7nj5LbbAEiHwftvK6pYroVZ6lgguVkZfpym7laRNuiGYfWNSAmkA4-hcbfBKyt167BKYW8KcuBeg7XXnQTkAbi3zSj96H67c4lPhovo388YhJYs8nLIGq-bI7sLR9nloIldvbHrOZsMg3RvoJnOw5D4jGtj_4QrlIJ-rLexF3iuTk1iI9HsXfW5ThxiBrITkcB8tNZL4fmukAWDgqah5G7x0HANotcql8z6drcaf5dz-Z8YAaZMTn7fjdH_VGbuBoqiKjDiObx1v0Oi8MKr5A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://proofreading-app.herokuapp.com/api/captiontracks",
+					"protocol": "https",
+					"host": [
+						"proofreading-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"captiontracks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCaptionTrack",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGM2OWJjN2E2YjI2MmNiNTEwMzBiNTgxMGQyMWQyNDM0MGRiNDFiN2NhNDgyZDc3OTk4MWJjY2MxMzU0OTM5ODhmNjkxY2JjOTJiZjZjMTkiLCJpYXQiOiIxNjA3NDgyMzYwLjk1NjMzMyIsIm5iZiI6IjE2MDc0ODIzNjAuOTU2MzM5IiwiZXhwIjoiMTYzOTAxODM2MC45NDMzMjciLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.lyhelw96guEpOPzjr4tq4JlIdesLT_eyTzje5OGK_dPLDhSpbnTEc5Kjc2Lw-oKMUsL1TftcvariohUPDCYqalyC28KzwTnl62Y_BDEq5O7k0eAFFFqGONkmIApfTHm6AiWi0EtlEBt3n5ir3MjRB9_4c4MaGCBT8SXXippQnrzTzS3I2dkP6N0q4NG0zd6cLGO3325R6IZVbY1XY6hlfkc7w_momzSHCGgYWUvwFx1P2a3Id_44D2fbg99g71hcoqvIu4f_lfBYpg6JOekEnKeNDUXHpK4IjIhZQARyYqKmQOaMrzKXANNMQ4letcm3hUljI3nOzdC6IyS7sVrGXa8xHi1q6NWoAfmy-3kawWBnUXsvGeERp6zJ1vRJJc098OwFE2VjnU-m9eaNasLXslgr3RKzsa7_DIzM_yY2P3l2Uaq1Od50uBQOms0aWOJTPTDglWM1d-p4dE8WS1ylkeE4iPPvpheHjX9vboD-RQsTvC3T5ER1-lCvz0kil2FT3sH0DjeEHzJeKbd2WRfVzoGdgFosrbrt4umpVMswfgRs-zRmo48NdNc110nKShdlNRv4B0u3mLH99e7nmqOtsw3l1l0lTcOGnUiDqEVWy0uNVjRY0peeuGrnmwsXVJwgh9Iq4JoRc2YhFTNAheYgufVm3jWmMJ_4CB3OKKuGr5I",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"captions\" :\"random captions\",\r\n    \"video_title\" :\"mt alshahat third caption track\",\r\n    \"video_id\" :\"fsdfsfe\",\r\n    \"format\" :\"srt\",\r\n    \"stream_url\" :\"https://stackoverflow.com/questions/47670251/php-artisan-serve-require-fatal-error-after-upgrading-php7\"\r\n}"
+				},
+				"url": {
+					"raw": "https://proofreading-app.herokuapp.com/api/captiontracks",
+					"protocol": "https",
+					"host": [
+						"proofreading-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"captiontracks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCaptionTrack",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDliZDE0M2VlNDAzNDYwZWEzNTgxYzNiZDI1YzZlNWU1NTIzZWU0NjJjMDg1NjViNTE4NTJhMGQ1MGE4OWMwNDliOWQxZTM4N2E0Njg4ZWIiLCJpYXQiOiIxNjA3NDgyMTEzLjcwOTk2MCIsIm5iZiI6IjE2MDc0ODIxMTMuNzA5OTY0IiwiZXhwIjoiMTYzOTAxODExMy42ODc5NjUiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.3O_kYqQp8AqLfTLSbPKhieINignfZwKciVa941X5JAMq2Nqdqhswq7pD7eBwchFq2VYy5De1TtKvVr2eVEqGaIoW9jxcgKyWKn6-X8ck1cr2Tu8gZt7ek8GtGPtEoybLIxjPZTUIipI1nCfRVVUlQX8Rm2JL7m25c9NW1rODgJU0gyNRkgzMdAdkiS1z-ox2LpIM87rwE2zZmc_EcnkfUIFLmzCPte2l5Q9PjG-u60fUkYfS6r6s2127RJJxRBS07_NbXU6oN6vTvP0Kdl-cfIDi5hQBFy16KYx2afh02YVCIULzQRHdsrjWuYyK5CQatzX_XgConQCP0SC43B8LYUfSAXU2iDJWsf0Hye0Y-8elNladfGQZ-15mAizrp6-JOi7t3aP7Oinlgx5akmKWOi7nj5LbbAEiHwftvK6pYroVZ6lgguVkZfpym7laRNuiGYfWNSAmkA4-hcbfBKyt167BKYW8KcuBeg7XXnQTkAbi3zSj96H67c4lPhovo388YhJYs8nLIGq-bI7sLR9nloIldvbHrOZsMg3RvoJnOw5D4jGtj_4QrlIJ-rLexF3iuTk1iI9HsXfW5ThxiBrITkcB8tNZL4fmukAWDgqah5G7x0HANotcql8z6drcaf5dz-Z8YAaZMTn7fjdH_VGbuBoqiKjDiObx1v0Oi8MKr5A",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"captions\" :\"Test\",\r\n    \"video_title\" :\"changing 70oda.41 stuff test \",\r\n    \"video_id\" :\"whatever\",\r\n    \"format\" :\"srt\",\r\n    \"stream_url\" :\"https://stackoverflow.com/questions/47670251/php-artisan-serve-require-fatal-error-after-upgrading-php7\"\r\n}"
+				},
+				"url": {
+					"raw": "https://proofreading-app.herokuapp.com/api/captiontracks/5",
+					"protocol": "https",
+					"host": [
+						"proofreading-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"captiontracks",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCaptionTrack",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDliZDE0M2VlNDAzNDYwZWEzNTgxYzNiZDI1YzZlNWU1NTIzZWU0NjJjMDg1NjViNTE4NTJhMGQ1MGE4OWMwNDliOWQxZTM4N2E0Njg4ZWIiLCJpYXQiOiIxNjA3NDgyMTEzLjcwOTk2MCIsIm5iZiI6IjE2MDc0ODIxMTMuNzA5OTY0IiwiZXhwIjoiMTYzOTAxODExMy42ODc5NjUiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.3O_kYqQp8AqLfTLSbPKhieINignfZwKciVa941X5JAMq2Nqdqhswq7pD7eBwchFq2VYy5De1TtKvVr2eVEqGaIoW9jxcgKyWKn6-X8ck1cr2Tu8gZt7ek8GtGPtEoybLIxjPZTUIipI1nCfRVVUlQX8Rm2JL7m25c9NW1rODgJU0gyNRkgzMdAdkiS1z-ox2LpIM87rwE2zZmc_EcnkfUIFLmzCPte2l5Q9PjG-u60fUkYfS6r6s2127RJJxRBS07_NbXU6oN6vTvP0Kdl-cfIDi5hQBFy16KYx2afh02YVCIULzQRHdsrjWuYyK5CQatzX_XgConQCP0SC43B8LYUfSAXU2iDJWsf0Hye0Y-8elNladfGQZ-15mAizrp6-JOi7t3aP7Oinlgx5akmKWOi7nj5LbbAEiHwftvK6pYroVZ6lgguVkZfpym7laRNuiGYfWNSAmkA4-hcbfBKyt167BKYW8KcuBeg7XXnQTkAbi3zSj96H67c4lPhovo388YhJYs8nLIGq-bI7sLR9nloIldvbHrOZsMg3RvoJnOw5D4jGtj_4QrlIJ-rLexF3iuTk1iI9HsXfW5ThxiBrITkcB8tNZL4fmukAWDgqah5G7x0HANotcql8z6drcaf5dz-Z8YAaZMTn7fjdH_VGbuBoqiKjDiObx1v0Oi8MKr5A",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://proofreading-app.herokuapp.com/api/captiontracks/1",
+					"protocol": "https",
+					"host": [
+						"proofreading-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"captiontracks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserCaptionTracks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjMyMDJlMmMyNzgxYTk1MWZmNTAwZGIzODI3MTdiNjkzZGU5YTMwZmZmMTE3NDgzOGUzZjkwYTc4NDRhYTAzNzVmNDhkNjkyMzYzMTg5OTAiLCJpYXQiOiIxNjA3NDgyNzA5LjQwNjc3MCIsIm5iZiI6IjE2MDc0ODI3MDkuNDA2Nzc3IiwiZXhwIjoiMTYzOTAxODcwOS40MDEwMTAiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.TtD9NHoGpOh_UUlt3A996ifZEyqvfM4DtjHUgDW3yBOzIj8Dn85YzaG2M0L7lwjiF1vv1lRIUO_KXtQDZQ1lNEVsFMQ8n2TE6BP9MwJBtimmnNFWGjHgZUsGt8IClS8VyPOO-YnVKlGz7s6hI6bJ0_1W29EsQj7BN1Zu3LMU-LxScI2ZRDNLhC8ADOOZ3qY307tdRvWETnjfLnaW_hIiNPxHX4OZ2oI3DSGJ7sZg4kat6qklKsS60JACMHVENjn2Am4k__bzzYcI76n2RawEMxpPZlpjJgXw406XdgNlY9VxdNKSjHC_aJiSXBMqxwTuNrg2h-lzhb1Cy05dSO0lBBhe9yxqKgkzAPHcLC8AAnf4TXjce_dNB6fDDTQrRHNRRchBMDu_YQIUfEKoLd_AHoQzc6Rj-fze85mcUylIFvuaHXJcGto0kIJbLZXVpdV4Q5h8gA-7T4RNOYI22GrbsSrqYm9nQr-bcCNP0uls_7zRvL17uygGBz_OZUl4JSsGXSGpMO27nuK-ZLuLTo4L4ks4KFMunxAMG4sn2ehlzzUPhVHg8QCQIYKlM8PKxaFRFOm0DVicOW3-IhVJhjweytRC3sJt3sB_EtfAU6gnDGyQ9nvP5xwF3gEGSrlzrt-pXPi3lF0KSEcG_4yAwWdUjiUp-1Em2M1rJEbdy8orstc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://proofreading-app.herokuapp.com/api/captiontracks/user",
+					"protocol": "https",
+					"host": [
+						"proofreading-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"captiontracks",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
